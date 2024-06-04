@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #4c5eaf;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #4c5eaf;
+        }
+
+        .example {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+            width: 250px;
+            top: 0;
+            right: -250px;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-right: 250px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 500px;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        article h2 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        article p {
+            padding: 0 15px 15px 15px;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                right: -100%; 
+            }
+
+            section {
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .menu-toggle {
+                font-size: 18px;
+                top: 10px;
+                right: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>English</h1>
+    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="overlay" onclick="toggleMenu()"></div> 
+    <nav id="side-menu">
+        <a href="index.html">Главная</a>
+        <a href="to be.html">to be</a>
+        <a href="articles.html">articles</a>
+        <a href="word order.html">word order</a>
+        <a href="cancan't.html">can/can't</a>
+        <a href="personal pronouns.html">personal pronouns</a>
+        <a href="someany.html">some/any</a>
+        <a href="Demonstrative pronouns.html">Demonstrative pronouns</a>
+        <a href="irregular Verbs.html">irregular Verbs</a>
+        <a href="Possessive pronouns.html">Possessive pronouns</a>
+        <a href="Adverbs.html">Adverbs</a>
+        <a href="Simple Tances.html">Simple Tances</a>
+        <a href="Continuous Tences.html">Continuous Tences</a>
+        <a href="Prepositions of time.html">Prepositions of time</a>
+        <a href="couldcouldn't.html">could/couldn't</a>
+        <a href="Degrees of comparison.html">Degrees of comparison</a>
+        <a href="Countableuncountable nouns.html">Countable/uncountable nouns</a>
+        <a href="to be going to.html">to be going to</a>
+        <a href="would like.html">would like</a>
+        <a href="Conditional 0.html">Conditionals</a>
+        <a href="Perfect tences.html">Perfect tences</a>
+        <a href="Vocabulary.html">Vocabulary</a>
+    </nav>
+    <main>
+        <h1 align="center">Conditionals</h1>
+
+        <h2 align="center">Условные предложения в английском языке</h2>
+        <p>Условные предложения (Conditional sentences) в английском языке используются для описания возможных событий и их следствий в зависимости от выполнения определенного условия.</p>
+
+        <h3>1. Условные предложения нулевого типа (Zero Conditional)</h3>
+        <p>Условные предложения нулевого типа выражают общие истинные факты или законы природы.</p>
+        <ul>
+            <li><strong>Форма:</strong> If + Present Simple, Present Simple.</li>
+            <p class="example">If you heat ice, it melts. (Если нагреть лед, он тает.)</p>
+            <p class="example">If it rains, the streets get wet. (Если идет дождь, улицы становятся мокрыми.)</p>
+        </ul>
+
+        <h3>2. Условные предложения первого типа (First Conditional)</h3>
+        <p>Условные предложения первого типа выражают возможные события в будущем, зависящие от выполнения определенного условия в настоящем.</p>
+        <ul>
+            <li><strong>Форма:</strong> If + Present Simple, will + основной глагол.</li>
+            <p class="example">If it rains, I will stay at home. (Если пойдет дождь, я останусь дома.)</p>
+            <p class="example">If she studies hard, she will pass the exam. (Если она усердно учится, она сдаст экзамен.)</p>
+        </ul>
+
+        <h3>3. Условные предложения второго типа (Second Conditional)</h3>
+        <p>Условные предложения второго типа выражают нереальные или маловероятные события в настоящем или будущем.</p>
+        <ul>
+            <li><strong>Форма:</strong> If + Past Simple, would + основной глагол.</li>
+            <p class="example">If I won the lottery, I would travel the world. (Если бы я выиграл в лотерею, я бы путешествовал по миру.)</p>
+            <p class="example">If she had more time, she would learn to play the guitar. (Если бы у нее было больше времени, она бы научилась играть на гитаре.)</p>
+        </ul>
+
+        <h3>4. Условные предложения третьего типа (Third Conditional)</h3>
+        <p>Условные предложения третьего типа выражают нереальные события в прошлом и их возможные последствия.</p>
+        <ul>
+            <li><strong>Форма:</strong> If + Past Perfect, would have + Past Participle.</li>
+            <p class="example">If she had studied harder, she would have passed the exam. (Если бы она училась усерднее, она бы сдала экзамен.)</p>
+            <p class="example">If they had left earlier, they would not have missed the train. (Если бы они ушли раньше, они не пропустили бы поезд.)</p>
+        </ul>
+
+        <h2 align="center">Задания для закрепления материала</h2>
+        <ol>
+            <li>Выберите правильный вариант, чтобы завершить предложение:
+                <ul>
+                    <li>If I _____ (study) harder, I would pass the exam. (A. studied, B. study, C. will study)</li>
+                    <li>If it _____ (not rain) tomorrow, we will go to the beach. (A. won't rain, B. didn't rain, C. doesn't rain)</li>
+                    <li>If I _____ (have) more money, I would travel around the world. (A. have, B. had, C. will have)</li>
+                </ul>
+            </li>
+            <li>Закончите предложения в соответствии с заданным условием:
+                <ul>
+                    <li>If I _____ (win) the lottery, I _____ (buy) a big house. (win, buy)</li>
+                    <li>If she _____ (come) to the party, he _____ (be) very happy. (come, be)</li>
+                    <li>If I _____ (not be) allergic to cats, I _____ (get) one as a pet. (not be, get)</li>
+                </ul>
+            </li>
+            <li>Составьте условные предложения, используя предложенные начала:
+                <ul>
+                    <li>If it snows tomorrow, </li>
+                    <li>If she had more time, </li>
+                    <li>If they had known about the traffic, </li>
+                    <li>If water boils, </li>
+                </ul>
+            </li>
+        </ol>
+    </main>
+    <script>
+        function toggleMenu() {
+            var sideMenu = document.getElementById('side-menu');
+            var overlay = document.querySelector('.overlay');
+            if (sideMenu.style.right === "0px") {
+                sideMenu.style.right = "-250px";
+                overlay.style.display = "none";
+            } else {
+                sideMenu.style.right = "0px";
+                overlay.style.display = "block";
+            }
+        }
+    </script>
+</body>
+
+</html>

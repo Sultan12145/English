@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #4c5eaf;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #4c5eaf;
+        }
+
+        .example {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+            width: 250px;
+            top: 0;
+            right: -250px;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-right: 250px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 500px;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        article h2 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        article p {
+            padding: 0 15px 15px 15px;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                right: -100%; 
+            }
+
+            section {
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .menu-toggle {
+                font-size: 18px;
+                top: 10px;
+                right: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English</h1>
+    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="overlay" onclick="toggleMenu()"></div> 
+    <nav id="side-menu">
+        <a href="index.html">Главная</a>
+        <a href="to be.html">to be</a>
+        <a href="articles.html">articles</a>
+        <a href="word order.html">word order</a>
+        <a href="cancan't.html">can/can't</a>
+        <a href="personal pronouns.html">personal pronouns</a>
+        <a href="someany.html">some/any</a>
+        <a href="Demonstrative pronouns.html">Demonstrative pronouns</a>
+        <a href="irregular Verbs.html">irregular Verbs</a>
+        <a href="Possessive pronouns.html">Possessive pronouns</a>
+        <a href="Adverbs.html">Adverbs</a>
+        <a href="Simple Tances.html">Simple Tances</a>
+        <a href="Continuous Tences.html">Continuous Tences</a>
+        <a href="Prepositions of time.html">Prepositions of time</a>
+        <a href="couldcouldn't.html">could/couldn't</a>
+        <a href="Degrees of comparison.html">Degrees of comparison</a>
+        <a href="Countableuncountable nouns.html">Countable/uncountable nouns</a>
+        <a href="to be going to.html">to be going to</a>
+        <a href="would like.html">would like</a>
+        <a href="Conditional 0.html">Conditionals</a>
+        <a href="Perfect tences.html">Perfect tences</a>
+        <a href="Vocabulary.html">Vocabulary</a>
+    </nav>
+<main>
+        <h1 align="center">To be going to</h1>
+
+        <h2 align="center">Выражение будущего времени с "to be going to"</h2>
+        <p>Конструкция "to be going to" используется в английском языке для выражения намерений или планов на будущее, а также для предсказания событий, которые, по мнению говорящего, произойдут в ближайшем будущем.</p>
+
+        <h3>1. Образование конструкции</h3>
+        <p>Конструкция "to be going to" образуется с использованием вспомогательного глагола "to be" (в нужной форме), за которым следует "going to" и инфинитив основного глагола.</p>
+        <ul>
+            <li><strong>Структура:</strong> Подлежащее + to be + going to + инфинитив основного глагола</li>
+            <p class="example">I am going to visit my friend. (Я собираюсь навестить друга.)</p>
+            <p class="example">She is going to buy a new dress. (Она собирается купить новое платье.)</p>
+        </ul>
+
+        <h3>2. Употребление "to be going to"</h3>
+        <p>"To be going to" используется для выражения:</p>
+        <ul>
+            <li><strong>Намерений и планов:</strong></li>
+            <p class="example">We are going to travel to Spain next summer. (Мы собираемся поехать в Испанию следующим летом.)</p>
+            <p class="example">He is going to start a new job in July. (Он собирается начать новую работу в июле.)</p>
+        </ul>
+        <ul>
+            <li><strong>Предсказаний, основанных на текущей ситуации:</strong></li>
+            <p class="example">Look at those clouds! It is going to rain. (Посмотри на эти облака! Будет дождь.)</p>
+            <p class="example">She is going to have a baby. (У неё будет ребенок.)</p>
+        </ul>
+
+        <h3>3. Отрицательные и вопросительные формы</h3>
+        <ul>
+            <li><strong>Отрицательная форма:</strong></li>
+            <p class="example">I am not going to eat that. (Я не собираюсь это есть.)</p>
+            <p class="example">They are not going to join us. (Они не собираются присоединяться к нам.)</p>
+        </ul>
+        <ul>
+            <li><strong>Вопросительная форма:</strong></li>
+            <p class="example">Are you going to finish your homework? (Ты собираешься закончить свою домашнюю работу?)</p>
+            <p class="example">Is he going to move to a new city? (Он собирается переехать в новый город?)</p>
+        </ul>
+
+        <h2 align="center">Задания для закрепления материала</h2>
+        <ol>
+            <li>Переведите следующие предложения на английский язык, используя конструкцию "to be going to":
+                <ul>
+                    <li>Я собираюсь позвонить своему другу.</li>
+                    <li>Они собираются построить новый дом.</li>
+                    <li>Она собирается учить французский язык.</li>
+                    <li>Мы собираемся устроить вечеринку.</li>
+                </ul>
+            </li>
+            <li>Заполните пропуски, используя правильную форму "to be going to":
+                <p class="example">She ______ (to be) going to buy a new phone.</p>
+                <p class="example">We ______ (to be) going to visit our grandparents.</p>
+                <p class="example">I ______ (to be) going to start a new project.</p>
+                <p class="example">He ______ (to be) going to play football.</p>
+            </li>
+            <li>Составьте вопросы из следующих утверждений, используя конструкцию "to be going to":
+                <ul>
+                    <li>You are going to travel to Japan.</li>
+                    <li>They are going to start a business.</li>
+                    <li>She is going to read a new book.</li>
+                    <li>He is going to learn how to cook.</li>
+                </ul>
+            </li>
+        </ol>
+</main>
+<script>
+    function toggleMenu() {
+        var sideMenu = document.getElementById('side-menu');
+        var overlay = document.querySelector('.overlay');
+        if (sideMenu.style.right === "0px") {
+            sideMenu.style.right = "-250px";
+            overlay.style.display = "none";
+        } else {
+            sideMenu.style.right = "0px";
+            overlay.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

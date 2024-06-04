@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #4c5eaf;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #4c5eaf;
+        }
+
+        .example {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+            width: 250px;
+            top: 0;
+            right: -250px;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-right: 250px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 500px;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        article h2 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        article p {
+            padding: 0 15px 15px 15px;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                right: -100%; 
+            }
+
+            section {
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .menu-toggle {
+                font-size: 18px;
+                top: 10px;
+                right: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English</h1>
+    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="overlay" onclick="toggleMenu()"></div> 
+    <nav id="side-menu">
+        <a href="index.html">Главная</a>
+        <a href="to be.html">to be</a>
+        <a href="articles.html">articles</a>
+        <a href="word order.html">word order</a>
+        <a href="cancan't.html">can/can't</a>
+        <a href="personal pronouns.html">personal pronouns</a>
+        <a href="someany.html">some/any</a>
+        <a href="Demonstrative pronouns.html">Demonstrative pronouns</a>
+        <a href="irregular Verbs.html">irregular Verbs</a>
+        <a href="Possessive pronouns.html">Possessive pronouns</a>
+        <a href="Adverbs.html">Adverbs</a>
+        <a href="Simple Tances.html">Simple Tances</a>
+        <a href="Continuous Tences.html">Continuous Tences</a>
+        <a href="Prepositions of time.html">Prepositions of time</a>
+        <a href="couldcouldn't.html">could/couldn't</a>
+        <a href="Degrees of comparison.html">Degrees of comparison</a>
+        <a href="Countableuncountable nouns.html">Countable/uncountable nouns</a>
+        <a href="to be going to.html">to be going to</a>
+        <a href="would like.html">would like</a>
+        <a href="Conditional 0.html">Conditionals</a>
+        <a href="Perfect tences.html">Perfect tences</a>
+        <a href="Vocabulary.html">Vocabulary</a>
+    </nav>
+<main>
+    <h1>Правила использования личных местоимений в английском языке</h1>
+    
+    <h2>Личные местоимения в английском языке</h2>
+    <p>Личные местоимения (Personal Pronouns) в английском языке используются для замены существительных, чтобы избежать повторений и сделать речь более плавной. Они изменяются в зависимости от падежа (именительный или объектный) и лица (первое, второе, третье). Также личные местоимения могут быть единственного или множественного числа.</p>
+    
+    <h2>Именительный падеж (Subject Pronouns)</h2>
+    <p>Именительный падеж используется, когда местоимение является подлежащим в предложении.</p>
+    <ul>
+        <li>I (я)</li>
+        <li>You (ты, вы)</li>
+        <li>He (он)</li>
+        <li>She (она)</li>
+        <li>It (оно)</li>
+        <li>We (мы)</li>
+        <li>They (они)</li>
+    </ul>
+    <p class="example">I like to read. (Я люблю читать.)</p>
+    <p class="example">She is a doctor. (Она врач.)</p>
+    
+    <h2>Объектный падеж (Object Pronouns)</h2>
+    <p>Объектный падеж используется, когда местоимение является дополнением в предложении.</p>
+    <ul>
+        <li>Me (меня, мне)</li>
+        <li>You (тебя, тебе, вас, вам)</li>
+        <li>Him (его, ему)</li>
+        <li>Her (её, ей)</li>
+        <li>It (его, ему, её, ей - для неодушевленных предметов и животных)</li>
+        <li>Us (нас, нам)</li>
+        <li>Them (их, им)</li>
+    </ul>
+    <p class="example">She called me. (Она позвонила мне.)</p>
+    <p class="example">We saw them at the park. (Мы видели их в парке.)</p>
+    
+    <h2>Примеры предложений с личными местоимениями</h2>
+    <p class="example">He loves his dog. (Он любит свою собаку.)</p>
+    <p class="example">Can you help us? (Можешь помочь нам?)</p>
+    <p class="example">They are going to the cinema. (Они идут в кино.)</p>
+    <p class="example">It is raining. (Идет дождь.)</p>
+    
+    <p>Правильное использование личных местоимений помогает делать речь более понятной и грамотной. Они являются важной частью английской грамматики и используются в повседневной речи.</p>
+</main>
+<script>
+    function toggleMenu() {
+        var sideMenu = document.getElementById('side-menu');
+        var overlay = document.querySelector('.overlay');
+        if (sideMenu.style.right === "0px") {
+            sideMenu.style.right = "-250px";
+            overlay.style.display = "none";
+        } else {
+            sideMenu.style.right = "0px";
+            overlay.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>

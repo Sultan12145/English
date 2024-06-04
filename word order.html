@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>English</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #444;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1, h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin-top: 0;
+        }
+
+        h2 {
+            font-size: 1.8em;
+            color: #4c5eaf;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        ul li {
+            background: #f0f0f0;
+            margin: 5px 0;
+            padding: 10px;
+            border-left: 5px solid #4c5eaf;
+        }
+
+        .example {
+            margin-left: 20px;
+            font-style: italic;
+            color: #555;
+        }
+
+        nav {
+            background-color: #444;
+            color: #fff;
+            text-align: center;
+            position: fixed;
+            height: 100%;
+            width: 250px;
+            top: 0;
+            right: -250px;
+            overflow-y: auto; 
+            overflow-x: hidden;
+            transition: 0.5s;
+            padding-top: 60px;
+            z-index: 1;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 15px;
+            display: block;
+            transition: 0.3s;
+        }
+
+        nav a:hover {
+            background-color: #555;
+        }
+
+        .menu-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            cursor: pointer;
+            font-size: 24px;
+            color: #fff;
+            z-index: 2;
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: 1;
+            display: none;
+        }
+
+        section {
+            padding: 20px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-right: 250px;
+        }
+
+        article {
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+            margin: 15px;
+            overflow: hidden;
+            transition: transform 0.3s;
+            width: 500px;
+        }
+
+        article:hover {
+            transform: scale(1.05);
+        }
+
+        article img {
+            width: 100%;
+            border-radius: 8px 8px 0 0;
+        }
+
+        article h2 {
+            padding: 15px;
+            margin: 0;
+        }
+
+        article p {
+            padding: 0 15px 15px 15px;
+            margin: 0;
+        }
+
+        main {
+            margin-left: 175px;
+            margin-right: 175px;
+        }
+
+        @media only screen and (max-width: 768px) {
+            nav {
+                width: 100%;
+                right: -100%; 
+            }
+
+            section {
+                margin-right: 0;
+                padding: 10px;
+            }
+
+            article {
+                width: 100%;
+            }
+
+            main {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .menu-toggle {
+                font-size: 18px;
+                top: 10px;
+                right: 10px;
+            }
+
+            h1 {
+                font-size: 1.8em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+        }
+
+        img {
+            max-width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>English</h1>
+    </header>
+    <div class="menu-toggle" onclick="toggleMenu()">☰</div>
+    <div class="overlay" onclick="toggleMenu()"></div> 
+    <nav id="side-menu">
+        <a href="index.html">Главная</a>
+        <a href="to be.html">to be</a>
+        <a href="articles.html">articles</a>
+        <a href="word order.html">word order</a>
+        <a href="cancan't.html">can/can't</a>
+        <a href="personal pronouns.html">personal pronouns</a>
+        <a href="someany.html">some/any</a>
+        <a href="Demonstrative pronouns.html">Demonstrative pronouns</a>
+        <a href="irregular Verbs.html">irregular Verbs</a>
+        <a href="Possessive pronouns.html">Possessive pronouns</a>
+        <a href="Adverbs.html">Adverbs</a>
+        <a href="Simple Tances.html">Simple Tances</a>
+        <a href="Continuous Tences.html">Continuous Tences</a>
+        <a href="Prepositions of time.html">Prepositions of time</a>
+        <a href="couldcouldn't.html">could/couldn't</a>
+        <a href="Degrees of comparison.html">Degrees of comparison</a>
+        <a href="Countableuncountable nouns.html">Countable/uncountable nouns</a>
+        <a href="to be going to.html">to be going to</a>
+        <a href="would like.html">would like</a>
+        <a href="Conditional 0.html">Conditionals</a>
+        <a href="Perfect tences.html">Perfect tences</a>
+        <a href="Vocabulary.html">Vocabulary</a>
+    </nav>
+<main>
+    <h1>
+        Порядок слов 
+    </h1>
+    <p>В грамматике принято выделять два типа порядка слов: прямой (Direct Order) , который используют в повествовательных (утвердительных и отрицательных) предложениях, и непрямой (Indirect Order) , который помогает задать вопрос, выразить восклицание или даже отдать распоряжение. </p>
+    <h2>Прямой порядок</h2>
+    <p>Главная особенность прямого порядка слов в утверждениях и отрицаниях — это то, что сказуемое идет строго после подлежащего. Разберем 5 основных правил для каждого из членов предложения : </p>
+    <h3>Подлежащее на первом месте </h3>
+    <p>В утвердительных предложениях подлежащее обычно стоит перед сказуемым и может быть выражено существительным (с артиклем или без), местоимением, инфинитивом, герундием или оборотом из нескольких слов</p>
+    <h3>Сказуемое на втором месте </h3>
+    <p>Сказуемое может быть выражено одним смысловым глаголом или несколькими (вспоминаем про вспомогательный глагол , после которого идет основной). С глаголами, вроде to be (быть) или to become (становиться), в состав сказуемого могут входить и другие части речи — прилагательное, причастие или существительное. Частица not в отрицательных предложениях тоже входит в состав сказуемого. </p>
+    <h3> Дополнение — после сказуемого</h3>
+    <p>Дополнение , если оно есть в предложении , как правило, выражено другим существительным (именем собственным или нарицательным) и употребляется после сказуемого.
+        Если в предложении два дополнения — и прямое, и косвенное, тогда каждое борется за первенство по следующему правилу:
+        вначале косвенное дополнение без предлога, затем — прямое дополнение</p>
+    <h3>Обстоятельство ставим по ситуации </h3>
+    <p>В зависимости от контекста и вида обстоятельства они могут располагаться в конце, начале и в середине предложения. В конце предложения. Обстоятельства образа действия, места и времени чаще всего занимают место в конце предложения после сказуемого или после дополнения , если оно есть.
+        Обстоятельства неопределенной частоты (например, sometimes — иногда , often — часто) также иногда используют в конце предложения , чтобы обратить на них внимание собеседника. </p>
+    <h3>Определение ставим до или после существительного </h3>
+    <p>Определение употребляется до или после существительного, от которого оно зависит. Определения, выраженные прилагательными, причастиями, притяжательными местоимениями и порядковыми числительными, идут перед существительным. Определение используют после существительного, если оно выражено причастным оборотом или другой конструкцией из нескольких слов, а также в случае с некоторыми прилагательными. </p>
+    <p>Таким образом, базовая схема прямого порядка слов выглядит так:
+
+        Подлежащее + Сказуемое + Дополнение + Обстоятельство </p>
+    <h2>Непрямой порядок </h2>
+    <p>Когда нарушается последовательность «подлежащее-сказуемое», говорят о непрямом порядке слов. </p>
+    <h3>Вопросы</h3>
+    <p>В разговорной речи можно задать вопрос с прямым порядком слов, поменяв только интонацию, как мы делаем это на русском, но в английской грамматике на этот счет есть свои правила. Для каждого вида вопросов характерен свой особый порядок слов, и в большинстве случаев вспомогательный глагол (или его часть), глагол to be или модальный глагол ставятся перед подлежащим. </p>
+    <p>Пример: Who has stolen the Christmas? </p>
+    <h3>Повелительные высказывания </h3>
+    <p>В приказах или просьбах обычно нет подлежащего. В остальном сохраняется типичный порядок слов: сказуемое, затем дополнение, остальные члены предложения располагаются в зависимости от ситуации. Если говорящий хочет подчеркнуть, к кому он обращается, он может сделать это до или после глагола: </p>
+    <p>You get away from me!  </p>
+    <p>Итог: Непрямой порядок — это когда подлежащее идет после сказуемого. Он используется в вопросах, повелительных высказываниях, восклицаниях, конструкции there is/there are, инверсивных и неполных предложениях. </p>
+</main>
+<script>
+    function toggleMenu() {
+        var sideMenu = document.getElementById('side-menu');
+        var overlay = document.querySelector('.overlay');
+        if (sideMenu.style.right === "0px") {
+            sideMenu.style.right = "-250px";
+            overlay.style.display = "none";
+        } else {
+            sideMenu.style.right = "0px";
+            overlay.style.display = "block";
+        }
+    }
+</script>
+</body>
+</html>
